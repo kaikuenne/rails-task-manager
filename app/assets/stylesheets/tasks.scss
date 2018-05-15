@@ -4,14 +4,67 @@
 
 body {
   font-family: Helvetica;
-  font-size: 14px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 20px;
+  color: grey;
+}
+
+h4 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 16px;
+  font-style: italic;
 }
 
 a {
   text-decoration: none;
+  font-size: 16px;
 
+  &:hover{
+    color: orange;
+  }
 }
 
-li {
-  list-style-type: none
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  padding: 10px 20px;
+  border: 2px solid grey;
+  margin: 50px 0px;
+
+  -webkit-box-shadow: inset 10px 10px 16px -12px rgba(145,145,145,1);
+  -moz-box-shadow: inset 10px 10px 16px -12px rgba(145,145,145,1);
+  box-shadow: inset 10px 10px 16px -12px rgba(145,145,145,1);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.tasks {
+  padding: 20px 0px;
+}
+
+.button {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10%;
+  border: 3px solid orange;
+  -webkit-box-shadow: 10px 10px 16px -12px rgba(145,145,145,1);
+  -moz-box-shadow: 10px 10px 16px -12px rgba(145,145,145,1);
+  box-shadow: 10px 10px 16px -12px rgba(145,145,145,1);
 }
